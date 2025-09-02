@@ -35,14 +35,7 @@ JavaScript (Vanilla)
 
 localStorage API
 
-📂 Project Structure
-├── index.html        # Main HTML file
-├── style.css         # Stylesheet
-├── script.js         # JavaScript logic
-├── screenshot.png    # Project screenshot
-└── README.md         # Project documentation
-
- ##Credits
+ ## Credits
 
 Developed by Your Tayyaba Tabassum
 .

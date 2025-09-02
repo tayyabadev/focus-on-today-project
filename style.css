@@ -5,7 +5,10 @@
     font-family: "Poppins", sans-serif;
     
 }
-
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important; /* replace white with your background color */
+  -webkit-text-fill-color: black !important; /* text color */
+}
 #outer-container{
     
     max-width: 100%;
@@ -60,7 +63,7 @@
 #inner-status-bar{
     border-radius: 1rem;
     background-color:#48A300;
-    width:66%;
+    width:0%;
     height:100%;
     margin: 1.5rem 0 1.5rem 0;
     display: flexbox;

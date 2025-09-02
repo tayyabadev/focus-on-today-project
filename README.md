@@ -37,5 +37,5 @@ localStorage API
 
  ## Credits
 
-Developed by Your Tayyaba Tabassum
-.
+Developed by Tayyaba Tabassum
+

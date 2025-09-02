@@ -37,6 +37,7 @@ circles.forEach((circle, i) => {
   });
 });
 taskTexts.forEach((text, i) => {
+  
   if (!allGoals[text.id]) {
     allGoals[text.id] = { name: "", completed: false };
   } else {
@@ -48,11 +49,19 @@ taskTexts.forEach((text, i) => {
   text.addEventListener("focus", () => {
     errorMsg.classList.remove("error-shown");
   });
+ 
   text.addEventListener("input", () => {
+    if (allGoals[text.id].completed == true) {
+      text.value = allGoals[text.id].name;
+      return;
+      
+     }
     allGoals[text.id] = {
       name: text.value,
       completed: false,
     };
+
     localStorage.setItem("allGoals", JSON.stringify(allGoals));
+   
   });
 });

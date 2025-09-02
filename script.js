@@ -5,6 +5,13 @@ const taskTextArray = [...taskTexts];
 const errorMsg = document.querySelector("#error-msg");
 let innerStatusBar = document.querySelector("#inner-status-bar");
 const doneNumber = document.querySelector("#done-number");
+let inspiringTexts = document.querySelector("#inspiring-text");
+let quotes = [
+  "Raise the bar by completing your goals!",
+  "A journey of a thousand miles begins with a single step",
+  "Just a step away, keep going!",
+  "Congratulations! Be proud of what you've achieved.",
+];
 const allGoals = JSON.parse(localStorage.getItem("allGoals")) || {};
 let completedGoalsCount = Object.values(allGoals).filter(
   (goal) => goal.completed
@@ -27,6 +34,9 @@ circles.forEach((circle, i) => {
         (goal) => goal.completed
       ).length;
       innerStatusBar.style.width = `${completedGoalsCount / 3 * 100}%`;
+      quotes.forEach((quote,i) => { 
+        inspiringTexts.textContent = quotes[completedGoalsCount];
+      })
       if (completedGoalsCount == 0) {
         doneNumber.textContent = "";
       }

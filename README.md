@@ -1,9 +1,9 @@
-###Goal Tracker App
+### Goal Tracker App
 
 A simple and interactive Goal Tracker built with HTML, CSS, and JavaScript.
 This app lets you create, manage, and complete daily goals with a progress bar, motivational quotes, and persistent data storage using localStorage.
 
-##Features
+## Features
 
 ✅ Add and edit goals
 ✅ Mark goals as completed
@@ -12,7 +12,7 @@ This app lets you create, manage, and complete daily goals with a progress bar, 
 ✅ Data saved in browser localStorage (persists after refresh)
 ✅ Responsive and clean UI
 
-##Demo Screenshot
+## Demo Screenshot
 <img width="1893" height="905" alt="image" src="https://github.com/user-attachments/assets/da8cc822-7872-43ea-b6db-179dcfab7484" />
 
 ## How It Works

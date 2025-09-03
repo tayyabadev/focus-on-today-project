@@ -151,7 +151,28 @@ footer{
 .error-shown {
     display: block;
 }
-
+#add-btn-div{
+display: flex;
+justify-content: center; 
+align-items: center;
+}
+#add-task{
+    background-color: rgb(23, 163, 0);
+    outline: none;
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+.del-btn{
+    background-color: #f65f25;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+     outline: none;
+    border: none;
+}
 @media (width<750px) {
     #main-container{
     width: 460px;
@@ -176,6 +197,10 @@ footer{
     height: 24px;
     margin: 1rem 0 0 1rem 0;
 }
+#add-task{
+    padding: 15px 35px;
+}
+
 }
 @media (width<550px) {
     #main-container{
@@ -201,6 +226,15 @@ footer{
     height: 20px;
     margin: 0.8rem 0 0.8rem 0;
 }
+#add-task{
+  
+    padding: 12px 30px;
+
+}
+.del-btn{ 
+    padding: 8px 16px;
+     
+}
 }
 @media (width<420px) {
 #main-container{
@@ -214,9 +248,10 @@ footer{
     margin-bottom: 1rem;
 }
 .single-task{
-    min-height: 40px;
+    min-height: 52px;
     margin: 1rem 0 1rem 0;
     padding-left: 1rem;
+    padding-right: 5px;
 }
 .circle{
     width: 16px;
@@ -228,5 +263,19 @@ footer{
 }
 #heading-div h2{
     font-size: 1.5rem;
+}
+#add-task{
+  
+    padding: 12px 26px;
+
+}
+.del-btn{ 
+    padding: 6px 12px;
+     
+}
+.task-text{
+    
+    padding-left: 0;
+    
 }
 }
